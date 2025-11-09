@@ -102,9 +102,10 @@ class GithubApiUnitTests extends WebTestCase
             $this->userInfo();
             $this->userFollowers();
             $this->userFriends();
-            $this->UnfollowList();
+            $this->unfollowList();
         }
 
 }
+
 
 
