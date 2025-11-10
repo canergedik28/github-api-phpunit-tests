@@ -5,7 +5,6 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpClient\HttpClient;
 
 
-
 class GithubApiTests extends WebTestCase
 {
     private  $client;
@@ -90,7 +89,6 @@ class GithubApiTests extends WebTestCase
                 $this->friendsList = $newData;
                 $this->assertSame(count($this->friendsList),$this->userFriendsCount);
         }
-
         
         public function unfollowList(){
             $unfollowList = array_diff($this->friendsList,$this->followersList);
