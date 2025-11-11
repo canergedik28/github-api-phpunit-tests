@@ -67,8 +67,7 @@ class GithubApiTests extends WebTestCase
                     $data = array_column($data,'login');
                     array_push($followersData,$data);
                 }
-                $newData =  array_merge(...$followersData);
-                $this->followersList = $newData;
+                $this->followersList =  array_merge(...$followersData);
                 $this->assertSame(count($this->followersList),$this->userFollowersCount);
         }
 
