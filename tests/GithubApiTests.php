@@ -84,8 +84,8 @@ class GithubApiTests extends WebTestCase
                     $data = array_column($data,'login');
                     array_push($friendsData,$data);
                 }
-                $newData =  array_merge(...$friendsData);
-                $this->friendsList = $newData;
+            
+                $this->friendsList =  array_merge(...$friendsData);
                 $this->assertSame(count($this->friendsList),$this->userFriendsCount);
         }
         
@@ -103,6 +103,7 @@ class GithubApiTests extends WebTestCase
         }
 
 }
+
 
 
 
