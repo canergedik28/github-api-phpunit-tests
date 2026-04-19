@@ -89,7 +89,7 @@ class GithubApiTests extends WebTestCase
                 $this->assertSame(count($this->friendsList),$this->userFriendsCount);
         }
         
-        public function userUnfollows(){
+        public function userUnfollowers(){
             $unfollowList = array_diff($this->friendsList,$this->followersList);
             $this->assertNotNull($unfollowList);
             $this->assertTrue(count($unfollowList)>0);
@@ -99,7 +99,7 @@ class GithubApiTests extends WebTestCase
             $this->userInfo();
             $this->userFollowers();
             $this->userFriends();
-            $this->userUnfollows();
+            $this->userUnfollowers();
         }
 
 }
