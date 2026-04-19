@@ -99,7 +99,7 @@ class GithubApiTests extends WebTestCase
             $this->userInfo();
             $this->userFollowers();
             $this->userFriends();
-            $this->userUnfollow();
+            $this->userUnfollows();
         }
 
 }
